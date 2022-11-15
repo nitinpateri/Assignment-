@@ -1,0 +1,46 @@
+form{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    padding:50px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+input,select{
+    width:300px;
+    height:23px;
+    transform: translate(0.7%,0);
+}
+label{
+    text-align: left;
+}
+button{
+    width: 310px;
+    height: 33px;
+    color:white;
+    background-color: rgb(70, 70, 235);
+    border-radius: 12px;
+    cursor: pointer;
+}
+#div2{
+    display: none;
+}
+p{
+    font-size: 15px;
+}
+a{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#success{
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: rgb(130, 239, 130);
+    border-radius: 12.5px;
+    box-shadow: 1px 1px 1px 1px red;
+    padding: 50px;
+} 

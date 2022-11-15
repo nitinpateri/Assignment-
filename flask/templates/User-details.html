@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>User Details</title>
+
+</head>
+<body>
+    <div id="success" style="background:white;box-shadow: 1px 1px 1px 1px black;">
+        <h1>User Details</h1>
+        <p>Id:{{data.split(',')[0]}}</p>
+        <p>First Name:{{data.split(',')[1]}}</p>
+        <p>Last Name:{{data.split(",")[2]}}</p>
+        <p>Username:{{data.split(",")[3]}}</p>
+        <p>Email:{{data.split(",")[4]}}</p>
+        <p>Gender:{{data.split(",")[5]}}</p>
+        <p>DOB:{{data.split(",")[6]}}</p>
+        <p>Address:{{data.split(",")[7]}}</p>
+    </div>
+</body>
+</html>

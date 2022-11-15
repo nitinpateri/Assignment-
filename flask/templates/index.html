@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Assignment</title>
+</head>
+<body>
+    <div id="div">
+        <div id="div1">
+            <form action="details" method="get">
+                <h1>Getting User Details</h1>
+                <label>ID</label><br>
+                <input type="number" name="id" id="id" placeholder="Enter your ID number"><br><br>
+                <label>First Name</label><br>
+                <input type="text" name="first_name" id="first_name" placeholder="Enter your first name"><br><br>
+                <label>Last Name</label><br>
+                <input type="text" name="last_name" id="last_name" placeholder="Enter your last name"><br><br>
+                <label>Username</label><br>
+                <input type="text" name="username" id="username" placeholder="Enter your username"><br><br>
+                <label>Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter your email address"><br><br>
+                <label>Gender</label><br>
+                <select name="gender" id="gender" onchange="getSelectValue()">
+                    <option value="">Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br><br>
+                <label>Date of Birth</label><br>
+                <input type="date" name="dob" id="dob" placeholder="Enter your date of birth"><br><br>
+                <label>Address</label><br>
+                <input type="text" name="address" id="address" placeholder="Enter your Address"><br><br>
+                <button>Submit</button>
+                <p>Do you want get details of a user?<a id="enter">Click here</a></p>
+            </form>
+        </div>
+        <div id="div2">
+            <form action="search" method="get">
+                <h1>Fetching User details</h1>
+                <label>Search</label><br>
+                <input type="search" name="search" placeholder="Enter user ID"><br><br>
+                <button>Search</button>
+                <p>Do you want to enter details of a user?<a id="search">Click here</a></p>
+            </form>
+        </div>
+    </div>
+    <script>
+        var enter = document.getElementById("enter")
+        var search = document.getElementById("search")
+        var div1 = document.getElementById("div1")
+        var div2 = document.getElementById("div2")
+        enter.onclick=()=>{
+            div2.style.display = "flex"
+            div1.style.display = "none"
+        }
+        search.onclick=()=>{
+            div2.style.display = "none"
+            div1.style.display = "flex"
+        }
+    </script>
+</body>
+</html>
